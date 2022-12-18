@@ -1,0 +1,155 @@
+# Save the output of this file and use kubectl create -f to import
+# it into Kubernetes.
+#
+# Created with podman-4.3.1
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    io.kubernetes.cri-o.ContainerType/dev-pod-dev-pod-sqlserver2022: container
+    io.kubernetes.cri-o.ContainerType/dev-pod-rabbitmq38: container
+    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: container
+    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-rabbitmq38: container
+    io.kubernetes.cri-o.ContainerType/elasticjang: container
+    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: container
+    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-rabbitmq38: container
+    io.kubernetes.cri-o.SandboxID/dev-pod-dev-pod-sqlserver2022: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
+    io.kubernetes.cri-o.SandboxID/dev-pod-rabbitmq38: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
+    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
+    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-rabbitmq38: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
+    io.kubernetes.cri-o.SandboxID/elasticjang: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
+    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
+    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-rabbitmq38: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
+    io.kubernetes.cri-o.TTY/elasticjang: "true"
+    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "true"
+    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "true"
+    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: "true"
+    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-rabbitmq38: "true"
+    io.podman.annotations.autoremove/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.autoremove/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.autoremove/elasticjang: "FALSE"
+    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.init/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.init/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.init/elasticjang: "FALSE"
+    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.init/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.init/hardcoremestorf/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.privileged/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.privileged/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.privileged/elasticjang: "FALSE"
+    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.privileged/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.privileged/hardcoremestorf/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.publish-all/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.publish-all/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.publish-all/elasticjang: "FALSE"
+    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38: "FALSE"
+    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-dev-pod-sqlserver2022: "FALSE"
+    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-rabbitmq38: "FALSE"
+  creationTimestamp: "2022-12-11T04:45:09Z"
+  labels:
+    app: pod-4-dev
+  name: pod-4-dev
+spec:
+  automountServiceAccountToken: false
+  containers:
+
+    #
+    # SQL Server 2022
+    #
+    - args:
+        - /opt/mssql/bin/sqlservr
+      env:
+        - name: MSSQL_SA_PASSWORD
+          value: MyStrong(!)Password
+        - name: ACCEPT_EULA
+          value: "Y"
+      image: mcr.microsoft.com/mssql/rhel/server:2022-latest
+      name: dev-pod-sqlserver2022
+      ports:
+        - containerPort: 1433
+          hostPort: 1433
+      resources: {}
+      securityContext:
+        capabilities:
+          drop:
+            - CAP_MKNOD
+            - CAP_NET_RAW
+            - CAP_AUDIT_WRITE
+      tty: true
+      volumeMounts:
+        - mountPath: /var/opt/mssql/data
+          name: sqlserver2022-data
+
+    #
+    # Rabbit MQ 3.8
+    #
+    - args:
+        - /opt/bitnami/scripts/rabbitmq/run.sh
+      image: docker.io/bitnami/rabbitmq:3.8
+      name: rabbitmq38
+      ports:
+        - containerPort: 15672
+          hostPort: 15672
+        - containerPort: 5672
+          hostPort: 5672
+      resources: {}
+      securityContext:
+        capabilities:
+          drop:
+            - CAP_MKNOD
+            - CAP_NET_RAW
+            - CAP_AUDIT_WRITE
+      tty: true
+      volumeMounts:
+        - mountPath: /bitnami
+          name: rabbitmq38data
+
+    #
+    # Smtp4dev
+    #
+    - image: docker.io/rnwood/smtp4dev:latest
+      name: smtp4dev
+      ports:
+        - containerPort: 80
+          hostPort: 3000
+        - containerPort: 25
+          hostPort: 2525
+      resources: { }
+      securityContext:
+        capabilities:
+          drop:
+            - CAP_MKNOD
+            - CAP_NET_RAW
+            - CAP_AUDIT_WRITE
+      tty: true
+
+  volumes:
+    - hostPath:
+        path: /mnt/d/PodVolume/sqlserver2022/data
+        type: Directory
+      name: sqlserver2022-data
+    - hostPath:
+        path: /mnt/d/PodVolume/rabbitmq3.8
+        type: Directory
+      name: rabbitmq38data
+
+  enableServiceLinks: false
+  hostname: pod-4-dev
+  restartPolicy: Always
+status: {}
