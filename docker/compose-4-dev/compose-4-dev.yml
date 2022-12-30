@@ -1,0 +1,101 @@
+version: '3.9'
+name: 'docker-compose-4-dev'
+
+networks:
+    network-4-dev:
+        driver: bridge
+
+services:
+    sqlserver2022:
+        container_name: sqlserver2022
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=MyStrong(!)Password
+        ports:
+            - '1433:1433' # Host:Container
+        volumes:
+            - sqlserver2022data:/var/opt/mssql/data
+            - sqlserver2022log:/var/opt/mssql/log
+            - sqlserver2022secrets:/var/opt/mssql/secrets
+            - sqlserver2022backup:/var/backups
+        image: mcr.microsoft.com/mssql/server:2022-latest
+
+    sqlserver2019:
+        container_name: sqlserver2019
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=MyStrong(!)Password
+        ports:
+            - '1444:1433'
+        volumes:
+            - sqlserver2019data:/var/opt/mssql/data
+            - sqlserver2019log:/var/opt/mssql/log
+            - sqlserver2019secrets:/var/opt/mssql/secrets
+            - sqlserver2019backup:/var/backups
+        build:
+            dockerfile: Dockerfile.sqlserver2019
+
+    smtp4dev:
+        container_name: smtp4dev
+        ports:
+            - '3000:80'
+            - '2525:25'
+        image: rnwood/smtp4dev
+
+    rabbitmq38:
+        container_name: rabbitmq3.8
+        image: 'bitnami/rabbitmq:3.8'
+        volumes:
+            - rabbitmq38data:/bitnami
+        ports:
+            - '15672:15672'
+            - '5672:5672'
+
+volumes:
+    sqlserver2022data:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2022/data
+            type: none
+    sqlserver2022log:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2022/log
+            type: none
+    sqlserver2022secrets:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2022/secrets
+            type: none
+    sqlserver2022backup:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2022/backup
+            type: none
+
+    sqlserver2019data:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2019/data
+            type: none
+    sqlserver2019log:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2019/log
+            type: none
+    sqlserver2019secrets:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2019/secrets
+            type: none
+    sqlserver2019backup:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/sqlserver2019/backup
+            type: none
+
+    rabbitmq38data:
+        driver_opts:
+            o: bind
+            device: /run/desktop/mnt/host/d/DockerVolume/rabbitmq3.8
+            type: none
