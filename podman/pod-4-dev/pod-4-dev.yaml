@@ -214,7 +214,7 @@ spec:
     - name: ACCEPT_EULA
       value: "Y"
     image: mcr.microsoft.com/mssql/rhel/server:2022-latest
-    name: pod-4-dev-sqlserver2022
+    name: sqlserver2022
     ports:
     - containerPort: 1433
       hostPort: 1433
@@ -240,7 +240,7 @@ spec:
   - args:
     - /opt/bitnami/scripts/rabbitmq/run.sh
     image: docker.io/bitnami/rabbitmq:3.8
-    name: pod-4-dev-rabbitmq38
+    name: rabbitmq38
     resources: {}
     securityContext:
       capabilities:
@@ -253,7 +253,7 @@ spec:
     - mountPath: /bitnami
       name: mnt-d-PodVolume-rabbitmq3.8-host-0
   - image: docker.io/rnwood/smtp4dev:latest
-    name: pod-4-dev-smtp4dev
+    name: smtp4dev
     resources: {}
     securityContext:
       capabilities:
