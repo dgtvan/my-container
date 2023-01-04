@@ -214,7 +214,7 @@ spec:
     - name: ACCEPT_EULA
       value: "Y"
     image: mcr.microsoft.com/mssql/rhel/server:2022-latest
-    name: pod-4-dev-dev-pod-sqlserver2022
+    name: pod-4-dev-sqlserver2022
     ports:
     - containerPort: 1433
       hostPort: 1433
