@@ -6,199 +6,6 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations:
-    io.kubernetes.cri-o.ContainerType/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/elasticjang/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/elasticjang/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/elasticjang/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/pod-4-dev-dev-pod-sqlserver2022: container
-    io.kubernetes.cri-o.ContainerType/pod-4-dev-rabbitmq38: container
-    io.kubernetes.cri-o.ContainerType/pod-4-dev-smtp4dev: container
-    io.kubernetes.cri-o.ContainerType/wec-mail-sender: container
-    io.kubernetes.cri-o.SandboxID/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/elasticjang/pod-4-dev-dev-pod-sqlserver2022: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/elasticjang/pod-4-dev-rabbitmq38: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/elasticjang/pod-4-dev-smtp4dev: 82dd47a3fb171a806437f2861148240fc789411a5a72f9610424738394d8e92
-    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: 25ecd33f2dd3d7bd12aee8c3ef0b690e2e76da7200a72b471d162b82068fd86
-    io.kubernetes.cri-o.SandboxID/pod-4-dev-dev-pod-sqlserver2022: 3496cf51f8f3c15a0b2f9582c1395c91317a71ad69c43e24d38e9255c5c155a
-    io.kubernetes.cri-o.SandboxID/pod-4-dev-rabbitmq38: 3496cf51f8f3c15a0b2f9582c1395c91317a71ad69c43e24d38e9255c5c155a
-    io.kubernetes.cri-o.SandboxID/pod-4-dev-smtp4dev: 3496cf51f8f3c15a0b2f9582c1395c91317a71ad69c43e24d38e9255c5c155a
-    io.kubernetes.cri-o.SandboxID/wec-mail-sender: 3496cf51f8f3c15a0b2f9582c1395c91317a71ad69c43e24d38e9255c5c155a
-    io.kubernetes.cri-o.TTY/elasticjang/pod-4-dev-dev-pod-sqlserver2022: "true"
-    io.kubernetes.cri-o.TTY/elasticjang/pod-4-dev-rabbitmq38: "true"
-    io.kubernetes.cri-o.TTY/elasticjang/pod-4-dev-smtp4dev: "true"
-    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "true"
-    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "true"
-    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "true"
-    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "true"
-    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "true"
-    io.kubernetes.cri-o.TTY/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "true"
-    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "true"
-    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "true"
-    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "true"
-    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "true"
-    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "true"
-    io.kubernetes.cri-o.TTY/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "true"
-    io.kubernetes.cri-o.TTY/wec-mail-sender: "false"
-    io.podman.annotations.autoremove/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/elasticjang/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/elasticjang/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/elasticjang/pod-4-dev-smtp4dev: "FALSE"
-    ? io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022
-    : "FALSE"
-    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.autoremove/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.autoremove/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.autoremove/wec-mail-sender: "FALSE"
-    io.podman.annotations.init/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/elasticjang/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/elasticjang/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/elasticjang/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.init/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.init/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.init/wec-mail-sender: "FALSE"
-    io.podman.annotations.privileged/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/elasticjang/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/elasticjang/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/elasticjang/pod-4-dev-smtp4dev: "FALSE"
-    ? io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022
-    : "FALSE"
-    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.privileged/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.privileged/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.privileged/wec-mail-sender: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/elasticjang/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/elasticjang/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/elasticjang/pod-4-dev-smtp4dev: "FALSE"
-    ? io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022
-    : "FALSE"
-    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/elatedmontalcini/dev-pod-sqlserver2022/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-dev-pod-sqlserver2022/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/hardcoremestorf/dev-pod-rabbitmq38/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/pod-4-dev-dev-pod-sqlserver2022: "FALSE"
-    io.podman.annotations.publish-all/pod-4-dev-rabbitmq38: "FALSE"
-    io.podman.annotations.publish-all/pod-4-dev-smtp4dev: "FALSE"
-    io.podman.annotations.publish-all/wec-mail-sender: "FALSE"
   creationTimestamp: "2022-12-30T14:20:26Z"
   labels:
     app: pod-4-dev
@@ -218,10 +25,22 @@ spec:
     ports:
     - containerPort: 1433
       hostPort: 1433
-    - containerPort: 25
-      hostPort: 2525
-    - containerPort: 80
-      hostPort: 3000
+    resources: {}
+    securityContext:
+      capabilities:
+        drop:
+        - CAP_MKNOD
+        - CAP_NET_RAW
+        - CAP_AUDIT_WRITE
+    tty: true
+    volumeMounts:
+    - mountPath: /var/opt/mssql/data
+      name: mnt-d-PodVolume-sqlserver2022-data-host-0
+  - args:
+    - rabbitmq-server
+    image: docker.io/library/rabbitmq:management
+    name: rabbitmq-latest
+    ports:
     - containerPort: 5672
       hostPort: 5672
     - containerPort: 15672
@@ -235,25 +54,15 @@ spec:
         - CAP_AUDIT_WRITE
     tty: true
     volumeMounts:
-    - mountPath: /var/opt/mssql/data
-      name: mnt-d-PodVolume-sqlserver2022-data-host-0
-  - args:
-    - /opt/bitnami/scripts/rabbitmq/run.sh
-    image: docker.io/bitnami/rabbitmq:3.8
-    name: rabbitmq38
-    resources: {}
-    securityContext:
-      capabilities:
-        drop:
-        - CAP_MKNOD
-        - CAP_NET_RAW
-        - CAP_AUDIT_WRITE
-    tty: true
-    volumeMounts:
-    - mountPath: /bitnami
-      name: mnt-d-PodVolume-rabbitmq3.8-host-0
+    - mountPath: /var/lib/rabbitmq/mnesia
+      name: mnt-d-PodVolume-rabbitmq-host-0
   - image: docker.io/rnwood/smtp4dev:latest
     name: smtp4dev
+    ports:
+    - containerPort: 80
+      hostPort: 3000
+    - containerPort: 25
+      hostPort: 2525
     resources: {}
     securityContext:
       capabilities:
@@ -262,18 +71,6 @@ spec:
         - CAP_NET_RAW
         - CAP_AUDIT_WRITE
     tty: true
-  - env:
-    - name: DOTNET_ENVIRONMENT
-      value: Development
-    image: wechub.azurecr.io/wec/mail.sender:latest
-    name: wec-mail-sender
-    resources: {}
-    securityContext:
-      capabilities:
-        drop:
-        - CAP_MKNOD
-        - CAP_NET_RAW
-        - CAP_AUDIT_WRITE
   enableServiceLinks: false
   hostname: pod-4-dev
   restartPolicy: Always
@@ -286,4 +83,8 @@ spec:
       path: /mnt/d/PodVolume/rabbitmq3.8
       type: Directory
     name: mnt-d-PodVolume-rabbitmq3.8-host-0
+  - hostPath:
+      path: /mnt/d/PodVolume/rabbitmq
+      type: Directory
+    name: mnt-d-PodVolume-rabbitmq-host-0
 status: {}
