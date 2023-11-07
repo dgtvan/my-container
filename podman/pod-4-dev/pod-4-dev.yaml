@@ -80,10 +80,6 @@ spec:
       type: Directory
     name: mnt-d-PodVolume-sqlserver2022-data-host-0
   - hostPath:
-      path: /mnt/d/PodVolume/rabbitmq3.8
-      type: Directory
-    name: mnt-d-PodVolume-rabbitmq3.8-host-0
-  - hostPath:
       path: /mnt/d/PodVolume/rabbitmq
       type: Directory
     name: mnt-d-PodVolume-rabbitmq-host-0
